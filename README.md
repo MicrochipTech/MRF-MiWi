@@ -1,9 +1,16 @@
 # MRF-MiWi
 
 
-"Wireless Made Easy!" - Microchip LoRaWAN Stack Opened for SAM R34 IC and WLR089U0 Module running on Microchip Studio IDE
+"Wireless Made Easy!" - Microchip MiWi P2P and Star Stack Opened for MRF24J40 and MRF89XA tarnsceiver running on MPLABXIDE
 
 Devices: | MRF24J40 | MRF89XA
+
+<p align="left">
+<a href="https://www.microchip.com" target="_blank">
+<img src="resources/media/Microchip_logo.png" width=320></a>
+</p>
+
+## ⚠ Disclaimer
 
 THE SOFTWARE ARE PROVIDED "AS IS" AND GIVE A PATH FOR SELF-SUPPORT AND SELF-MAINTENANCE.
 
