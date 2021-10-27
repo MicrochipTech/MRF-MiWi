@@ -5,10 +5,6 @@
 
 Devices: | MRF24J40 | MRF89XA
 
-<p align="left">
-<a href="https://www.microchip.com" target="_blank">
-<img src="resources/media/Microchip_logo.png" width=320></a>
-</p>
 
 ## ⚠ Disclaimer
 
