@@ -1,6 +1,6 @@
 # MRF-MiWi
 
-
+<img src="resources/media/IoT-Made-Easy-Logo.png" width=100>
 "Wireless Made Easy!" - Microchip MiWi P2P and Star Stack Opened for MRF24J40 and MRF89XA tarnsceiver running on MPLABXIDE
 
 Devices: | MRF24J40 | MRF89XA
