@@ -44,7 +44,7 @@ This repository contains unsupported example code intended to help accelerate cl
 1. [Hardware Platforms](#step2)
 1. [Software Requirements](#step3)
 1. [Software Environment Setup](#step4)
-   1. [Must Read](#step4a)
+   1. [Must Read to resolve XC8 compiler build issues](#step4a)
    1. [Location of MakeFiles in LWMESH Folder Structure](#step4b)
    1. [Create a project from Makefile in Microchip Studio 7](#step4c)
 1. [Sample Applications](#step5)
@@ -101,13 +101,13 @@ Notes: The MRF MiWi protocol package is validated with MPLAB X IDE v5.45.
 
 ...
 
-### Must Read<a name="step4a"></a>
+### Must Read to resolve XC8 compiler build issues<a name="step4a"></a>
 
 PIC16 and PIC18 project configurations in MRF MiWi package are not compatible with Microchip XC8 v2.xx compilers. You must install XC8 v1.45 from [MPLAB® Development Ecosystem Downloads Archive](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-ecosystem-downloads-archive) to build PIC16 and PIC18 configurations.
 
 The latest DFPs are not compatible with XC8 v1.45 compiler. Earlier DFPs will need to be installed from Tools => Packs in MPLAB X IDE. The specific device pack can then be selected together with compiler option in Project Properties.
 
-
+<img src="resources/media/PIC18F46J50_project_property.png" width=1000>
 
 ### Location of MakeFiles in LWMESH Folder Structure<a name="step4b"></a>
 
