@@ -45,8 +45,8 @@ This repository contains unsupported example code intended to help accelerate cl
 1. [Software Requirements](#step3)
 1. [Software Environment Setup](#step4)
    1. [Must Read to resolve XC8 compiler build issues](#step4a)
-   1. [Location of MakeFiles in LWMESH Folder Structure](#step4b)
-   1. [Create a project from Makefile in Microchip Studio 7](#step4c)
+   1. [Location of 3 sample projects in MRF MiWi package](#step4b)
+   1. [Select a Build configuration](#step4c)
 1. [Sample Applications](#step5)
    1. [Energy Detection Application](#step5a)
    1. [Peer2Peer Application](#step5b)
@@ -105,44 +105,29 @@ Notes: The MRF MiWi protocol package is validated with MPLAB X IDE v5.45.
 
 PIC16 and PIC18 project configurations in MRF MiWi package are not compatible with latest Microchip XC8 v2.xx compilers. You must install XC8 v1.45 from [MPLAB® Development Ecosystem Downloads Archive](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-ecosystem-downloads-archive) to build PIC16 and PIC18 configurations in MRF MiWi package.
 
-The latest DFPs are not compatible with XC8 v1.45 compiler. Earlier DFPs will need to be installed from Tools => Packs in MPLAB X IDE. The specific device pack can then be selected together with compiler version option in Project Properties. Below is a picture showing 8-Bit Wireless Development Kit PIC18F46J50 Project Properties.
+The latest DFPs are not compatible with XC8 v1.45 compiler. Earlier DFPs will need to be installed from Tools => Packs in MPLAB X IDE. The specific device pack can then be selected together with compiler version option in Project Properties. 
+
+Below 2 pictures show 8-Bit Wireless Development Kit PIC18F46J50 Project Properties and PICDEM™ PIC18 Explorer Demonstration Board PIC16F1947 Project Properties.
 
 <img src="resources/media/PIC18F46J50_project_property.png" width=1000>
+<br />
+<img src="resources/media/PIC16F1947_project_property.png" width=1000>
 
 Before a PIC16 or PIC18 configuration in MRF MiWi package is built, a good combination of compiler and DFP must be set so the project can be built successfully.
 
-### Location of MakeFiles in LWMESH Folder Structure<a name="step4b"></a>
+### Location of 3 sample projects in MRF MiWi package<a name="step4b"></a>
 
-Generic File Path:
-`..\thirdparty\wireless\avr2130_lwmesh\apps\AppName\Device_Name\gcc`
+You can find 3 sample projects in `..\MRF MiWi\apps\miwi\miwi_p2p`.
 
-or
+### Select a Build Configuration<a name="step4c"></a>
 
-Device Specific File Path:
-`..\thirdparty\wireless\avr2130_lwmesh\apps\EdDemo\atmega128rfa1_rcb\gcc`
+AFter the sample project is opened in MPLAB X IDE, you can select a build configuration in MPLAB X IDE by right-clicking on the sample project and select "set configuration".
 
+<img src="resources/media/Set_config.png" width=800>
 
-Inside the gcc folder MakeFile can be found.
+Alternatively, the configuration can also be set by a pull down menu on MPLAB X IDE tool bar below file menu.
 
-### Create a project from Makefile in Microchip Studio 7<a name="step4c"></a>
-
-To create a project from Makefile in Microchip Studio 7:
-
-https://microchipsupport.force.com/s/article/Creating-a-project-from-Makefile-in-Atmel-Studio
-
-
-Alternatively, to open the readily available Microchip studio C project file, find it from the mentioned path:
-
-Generic File Path:
-`..\thirdparty\wireless\avr2130_lwmesh\apps\AppName\Device_Name\as5_8`
-
-or
-
-Device Specific File Path:
-`..\thirdparty\wireless\avr2130_lwmesh\apps\EdDemo\atmega128rfa1_rcb\as5_8`
-
-Which can be opened with Microchip studio and changes can be done on the application level if needed and then compiled & build. After the successful build, the firmware images will be generated.
-
+<img src="resources/media/Set_config_toolbar.png" width=800>
 
 ## Sample Applications<a name="step5"></a>
 
