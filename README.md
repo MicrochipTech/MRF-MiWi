@@ -44,7 +44,7 @@ This repository contains unsupported example code intended to help accelerate cl
 1. [Hardware Platforms](#step2)
 1. [Software Requirements](#step3)
 1. [Software Environment Setup](#step4)
-   1. [Overview](#step4a)
+   1. [Must Read](#step4a)
    1. [Location of MakeFiles in LWMESH Folder Structure](#step4b)
    1. [Create a project from Makefile in Microchip Studio 7](#step4c)
 1. [Sample Applications](#step5)
@@ -92,7 +92,7 @@ The MiWi P2P protocol is a variation of IEEE 802.15.4 and supports both peer-to-
 * [MPLAB® XC Compilers](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers) Install latest XC16 compliler
 * [MPLAB® Development Ecosystem Downloads Archive](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-ecosystem-downloads-archive) This is for XC8 compiler v.1.45 download required for MRF MiWi PIC18 device branch code build
 
-* LwMesh stack v1.2.1 ([Clone/Download](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the current repo to get the software)
+* MRF MiWi package ([Clone/Download](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the current repo to get the software)
 
 Notes: The MRF MiWi protocol package is validated with MPLAB X IDE v5.45.
 
@@ -101,11 +101,13 @@ Notes: The MRF MiWi protocol package is validated with MPLAB X IDE v5.45.
 
 ...
 
-### Overview<a name="step4a"></a>
+### Must Read<a name="step4a"></a>
 
-Makefiles have been generated for each hardware supported.
+PIC16 and PIC18 project configurations in MRF MiWi package are not compatible with Microchip XC8 v2.xx compilers. You must install XC8 v1.45 from [MPLAB® Development Ecosystem Downloads Archive](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-ecosystem-downloads-archive) to build PIC16 and PIC18 configurations.
 
-Follow the instructions below to learn how to access the makefile location and generate a Microchip Studio project from a makefile.
+The latest DFPs are not compatible with XC8 v1.45 compiler. Earlier DFPs will need to be installed from Tools => Packs in MPLAB X IDE. The specific device pack can then be selected together with compiler option in Project Properties.
+
+
 
 ### Location of MakeFiles in LWMESH Folder Structure<a name="step4b"></a>
 
