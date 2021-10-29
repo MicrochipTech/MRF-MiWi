@@ -138,7 +138,7 @@ Alternatively, the configuration can also be set by a pull down menu on MPLAB X 
 
 - To test this application, open a terminal for both the nodes. On entering text in the terminal, the data is transmitted from one Node to another node.
 
-- A PC UART COM port terminal need to be connected to each of the 2 nodes.
+- A PC UART COM port terminal (19200 8 N 1) need to be connected to each of the 2 nodes.
 
 
 ### Simple Example P2P<a name="step5b"></a>
