@@ -29,9 +29,9 @@ This repository contains unsupported example code intended to help accelerate cl
 
 ## Resources
 
-- [Microchip MPLABXIED IDE](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide)
+- [Microchip MPLAB X IED IDE](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide)
 - [MPLAB® Development Ecosystem Downloads Archive](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-ecosystem-downloads-archive) This is for XC8 compiler v.1.45 download required for MRF MiWi PIC18 device branch code build
-
+- [MRF24J40 Related materials](resources/media/MRF24J40)
 
 - AVR2130: Lightweight Mesh Developer Guide
 - [AVR2131: Lightweight Mesh Getting Started Guide Application Note](http://ww1.microchip.com/downloads/en/Appnotes/Atmel-42029-Lightweight-Mesh-Getting-Started-Guide_Application-Note_AVR2131.pdf)
