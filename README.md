@@ -3,7 +3,7 @@
 <img src="resources/media/IoT-Made-Easy-Logo.png" width=100>
 "Wireless Made Easy!" - Microchip MiWi P2P and Star Stack Opened for MRF24J40 and MRF89XA transceiver running on MPLAB X IDE
 
-Devices: | MRF24J40 | MRF89XA <br /> Supported Host MCU: | PIC18F46J20 | PIC18F46J50 | PIC18F4620 | PIC24FJ128GA010
+Devices: | MRF24J40 | MRF89XA <br /> Supported Host MCU: | PIC18F46J50 | PIC18F4620 | PIC18F87J11 | PIC24FJ128GA010 | PIC16F1947
 
 
 ## ⚠ Disclaimer
@@ -24,7 +24,7 @@ This repository contains unsupported example code intended to help accelerate cl
 
 <b>MRF-MiWi is not compatible with [MiWi protocol](https://www.microchip.com/en-us/products/wireless-connectivity/sub-ghz/miwi-protocol) supporting SAMR21 and SAMR30 SoC devices.
 
-  MRF MiWi supports only MRF24J40 and MRF89XA tranceiver IC based devices. MRF MiWi supports PIC18F46J20/50, PIC18F4620 and PIC24FJ128GA010 as host MCUs.
+  MRF MiWi supports only MRF24J40 and MRF89XA tranceiver IC based devices. MRF MiWi supports PIC16F1947, PIC18F46J50, PIC18F4620, PIC18F87J11 and PIC24FJ128GA010 as host MCUs.
 </b>
 
 ## Resources
@@ -83,25 +83,18 @@ The MiWi P2P protocol is a variation of IEEE 802.15.4 and supports both peer-to-
 |  | MRF89XA | 8-Bit Wireless Development Kit |
 |  | MRF24J40 | MiWi™ Demo Kit |
 |  | MRF89XA | MiWi™ Demo Kit |
-| SAMR21 |	ATMEGARFA1 |	USB stick with ZigBit Xmega-AT86RF212B |
-| SAM4S |	ATMEGARFR2 |	SAMD20 with ZigBit AT86RF233 |
-| SAM4E | | SAMD20 with ZigBit-AT86RF212B |
-| MEGA_RF |  | SAM4L with ZigBit AT86RF233 |
-| Atmel AVR 8-bit ATmega RF Single Chip platforms | | SAM4L with ZigBit-AT86RF212B |
-| XMEGA-A | |  Xmega-a3bu Xplained with RZ600 radio modules |
-| Atmel AVR 8-bit ATxmega platforms | |  Atmega128rfa1 RCB |
-| | |  Atmega256rfr2 RCB |
-
-MiWi™ Demo Kit
+| <b>PIC18F4620</b> |MRF24J40 | PICDEM™ Z Demonstration Kit |
+| <b>PIC16F1947</b> |MRF24J40 | PICDEM™ PIC18 Explorer Demonstration Board |
 
 ## Software Requirements<a name="step3"></a>
 
-* [Microchip Studio 7.0 IDE](https://www.microchip.com/mplab/microchip-studio)
-* [Advanced Software Framework ASFv3.50](https://www.microchip.com/en-us/development-tools-tools-and-software/libraries-code-examples-and-more/advanced-software-framework-for-sam-devices)
-* [WSN Monitor](https://gallery.microchip.com/packages/WSN-Monitor-Setup/)
+* [Microchip MPLAB X IED IDE](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide)
+* [MPLAB® XC Compilers](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers) Install latest XC16 compliler
+* [MPLAB® Development Ecosystem Downloads Archive](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-ecosystem-downloads-archive) This is for XC8 compiler v.1.45 download required for MRF MiWi PIC18 device branch code build
+
 * LwMesh stack v1.2.1 ([Clone/Download](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the current repo to get the software)
 
-Notes: The Lighweight Mesh software is validated with Microchip Studio 7.0, ASFv3.50 on [SAMR21 Xplained Pro](https://www.microchip.com/en-us/development-tool/ATSAMR21-XPRO) boards
+Notes: The MRF MiWi protocol package is validated with MPLAB X IDE v5.45.
 
 
 ## Software Environment Setup<a name="step4"></a>
