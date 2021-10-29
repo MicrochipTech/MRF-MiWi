@@ -30,14 +30,13 @@ This repository contains unsupported example code intended to help accelerate cl
 ## Resources
 
 - [Microchip MPLAB X IED IDE](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide)
-- [MPLAB® Development Ecosystem Downloads Archive](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-ecosystem-downloads-archive) This is for XC8 compiler v.1.45 download required for MRF MiWi PIC18 device branch code build
-- [MRF24J40 Related materials](resources/media/MRF24J40)
-- [MRF89XA Related materials](resources/media/MRF89XA)
 - [8-Bit Wireless Development Kit User's guide](resources/media/8-Bit%20Wireless%20Development%20Kit%20User's%20guide.pdf)
-- [MRF24J40 module device page](https://www.microchip.com/en-us/product/MRF24J40MA)
+- [MRF24J40MA module device page](https://www.microchip.com/en-us/product/MRF24J40MA)
+- [MRF24J40 Related materials](resources/media/MRF24J40)
 - [MRF89XAM8A module device page](https://www.microchip.com/en-us/product/MRF89XAM8A)
 - [MRF89XAM9A module device page](https://www.microchip.com/en-us/product/MRF89XAM9A)
-
+- [MRF89XA Related materials](resources/media/MRF89XA)
+- [MPLAB® Development Ecosystem Downloads Archive](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-ecosystem-downloads-archive) This is for XC8 compiler v.1.45 download required for MRF MiWi PIC18 device branch code build
 
 ## A la carte
 
@@ -57,24 +56,33 @@ This repository contains unsupported example code intended to help accelerate cl
 
 ## Introduction<a name="step1"></a>
 
-Lightweight Mesh software stack is an easy to use proprietary low power wireless mesh network protocol. It has been designed to address the needs of a wide range of wireless connectivity applications, including:
-- Remote control
-- Alarms and security
-- Automatic Meter Reading (AMR)
-- Home and commercial building automation
-- Toys and educational equipment
-
-Lightweight Mesh is designed to work with all Microchip IEEE® 802.15.4 transceivers and SoCs. Currently the stack works with AVR®- and ARM®-based MCUs, but given extreme portability and low resource requirements, it can be run on almost any Microchip MCU.
+### Protocol Overview
+The MiWi P2P protocol stack modifies the IEEE 802.15.4 specification MAC layer by adding commands that simplify the handshaking process. It simplifies link disconnection and channel hopping by providing supplementary MAC commands. However, application-specific decisions, such as when to perform an energy scan or when to jump channels, are not defined in the protocol. The implementation is left to the application developers to do in application layer.
+### Protocol Features
+The MiWi P2P Wireless Protocol has the following features:
+* Supports Microchip PICand and PIC24 platforms through Microchip XC8, and XC16 compilers, respectively
+* Supports MRF24J40 (IEEE 802.15.4 compliant radio transceiver) and MRF89XA (proprietary radio transceiver) through Microchip Application Libraries
+* Functions as a state machine (not RTOS-dependent)
+* Supports a sleeping device at the end as a communication node
+* Enables Energy Detect (ED) scanning to operate on the least-noisy channel
+* Provides active scan for detecting new and existing connections
+* Supports frequency agility (channel hopping)
+### Protocol Considerations
+The MiWi P2P protocol is a variation of IEEE 802.15.4 and supports both peer-to-peer (P2P) and star topologies. It has no routing mechanism, hence the wireless communication coverage is defined by the radio range. The Guaranteed Time Slot (GTS) and Beacon networks by option are not supported, hence both the sides of the communication cannot simultaneously go to Sleep mode. If the application requires wireless networking and routing instead of P2P and Star type communication, MiWi Mesh is a suitable communication platform for proprietary standards. For interoperability type of requirements with wireless devices or nodes of other vendors, ZigBee® protocol based on IEEE802.15.4 will a good option.
 
 
 ## Hardware Platforms<a name="step2"></a>
 
 | Supported MCU families | Supported Transceivers | Supported boards |
 | --- | --- | --- |
-| <b>SAM platforms</b> | AT86RF212 | Atmega256RFR2 Xplained Pro |
-| SAMD20 | AT86RF12B | SAMR21 Xplained Pro |
-| SAMD21 | AT86RF231 | SAM4S Xplained Pro |
-| SAM4L | AT86RF233 | SAM4L Xplained ProUSB stick with ZigBit Xmega-AT86RF233 |
+| <b>PIC18F87J11</b> |MRF24J40 | PICDEM™ PIC18 Explorer Demonstration Board |
+|  | MRF89XA | PICDEM™ PIC18 Explorer Demonstration Board |
+| <b>PIC24FJ128GA010</b> | MRF24J40 | Explorer 16 Development Board |
+|  | MRF89XA | Explorer 16 Development Board |
+| <b>PIC18F46J50</b> | MRF24J40 | 8-Bit Wireless Development Kit |
+|  | MRF89XA | 8-Bit Wireless Development Kit |
+|  | MRF24J40 | MiWi™ Demo Kit |
+|  | MRF89XA | MiWi™ Demo Kit |
 | SAMR21 |	ATMEGARFA1 |	USB stick with ZigBit Xmega-AT86RF212B |
 | SAM4S |	ATMEGARFR2 |	SAMD20 with ZigBit AT86RF233 |
 | SAM4E | | SAMD20 with ZigBit-AT86RF212B |
@@ -84,6 +92,7 @@ Lightweight Mesh is designed to work with all Microchip IEEE® 802.15.4 transcei
 | Atmel AVR 8-bit ATxmega platforms | |  Atmega128rfa1 RCB |
 | | |  Atmega256rfr2 RCB |
 
+MiWi™ Demo Kit
 
 ## Software Requirements<a name="step3"></a>
 
