@@ -34,9 +34,10 @@ This repository contains unsupported example code intended to help accelerate cl
 - [MRF24J40 Related materials](resources/media/MRF24J40)
 - [MRF89XA Related materials](resources/media/MRF89XA)
 - [8-Bit Wireless Development Kit User's guide](resources/media/8-Bit%20Wireless%20Development%20Kit%20User's%20guide.pdf)
+- [MRF24J40 module device page](https://www.microchip.com/en-us/product/MRF24J40MA)
+- [MRF89XAM8A module device page](https://www.microchip.com/en-us/product/MRF89XAM8A)
+- [MRF89XAM9A module device page](https://www.microchip.com/en-us/product/MRF89XAM9A)
 
-- AVR2130: Lightweight Mesh Developer Guide
-- [AVR2131: Lightweight Mesh Getting Started Guide Application Note](http://ww1.microchip.com/downloads/en/Appnotes/Atmel-42029-Lightweight-Mesh-Getting-Started-Guide_Application-Note_AVR2131.pdf)
 
 ## A la carte
 
