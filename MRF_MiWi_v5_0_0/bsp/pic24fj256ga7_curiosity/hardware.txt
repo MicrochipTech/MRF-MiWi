@@ -1,0 +1,69 @@
+================================================================
+PIC24F256GA7 Curiosity Development Board
+================================================================
+
+mikroBUS(tm) connections
+----------------------------------------------------------------
+The PIC24F256GA7 Curiosity Development Board has two mikroBUS 
+ports.  
+
+ +- mikroBUS A pin
+ |       +- Processor pin
+ |       |             
+/===\ /=====\ 
+AN   |  RC1  |  
+RST  |  RA13 |  
+CS   |  RC9  |   
+SCK  |  RB15 |       
+MISO |  RB13 |  
+MOSI |  RB14 |  
+PWM  |  RC3  |  
+INT  |  RC8  |
+RX   |  RB1  |  
+TX   |  RB0  |  
+SCL  |  RB3  |  
+SDA  |  RB2  |  
+
+ +- mikroBUS B pin
+ |       +- Processor pin
+ |       |             
+/===\ /=====\ 
+AN   |  RC0  |  
+RST  |  RA14 |  
+CS   |  RA10 |   
+SCK  |  RC6  |       
+MISO |  RB9  |  
+MOSI |  RC2  |  
+PWM  |  RC4  |  
+INT  |  RC5  |
+RX   |  RB8  |  
+TX   |  RB7  |  
+SCL  |  RB6  |  
+SDA  |  RB5  | 
+
+Switches
+----------------------------------------------------------------
+
+ +- Switch
+ |       +- Processor pin
+ |       |            
+/===\ /=====\ 
+S1   |  RA11 |  
+S2   |  RA12 |   
+
+
+LCD
+----------------------------------------------------------------
+The PIC24F256GA7 Curiosity Board does not have an LCD.  Some 
+demos use an LCD.  As such, a RAM buffer was created to emulate 
+an LCD screen.  Users can halt the code and view the emulated 
+LCD screen via a watch window.
+
+
+References/Links
+----------------------------------------------------------------
+[1] http://www.mikroe.com/mikrobus/
+
+Legal
+----------------------------------------------------------------
+mikroBUS a trademark of MikroElectronika.
