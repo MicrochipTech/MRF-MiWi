@@ -39,7 +39,7 @@ FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/simple_example_p2p.x.${IMAGE_TYPE}.${
 endif
 
 ifeq ($(COMPARE_BUILD), true)
-COMPARISON_BUILD=-mafrlcsj
+COMPARISON_BUILD=--mafrlcsj
 else
 COMPARISON_BUILD=
 endif
@@ -98,7 +98,7 @@ ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1: ../../../../../../framework/
 	@${MKDIR} "${OBJECTDIR}/_ext/1308774647" 
 	@${RM} ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1 ../../../../../../framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1 ../../../../../../framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c 
 	@-${MV} ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.d ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -106,7 +106,7 @@ ${OBJECTDIR}/_ext/916281452/miwi_nvm.p1: ../../../../../../framework/miwi/src/mi
 	@${MKDIR} "${OBJECTDIR}/_ext/916281452" 
 	@${RM} ${OBJECTDIR}/_ext/916281452/miwi_nvm.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/916281452/miwi_nvm.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/916281452/miwi_nvm.p1 ../../../../../../framework/miwi/src/miwi_nvm.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/916281452/miwi_nvm.p1 ../../../../../../framework/miwi/src/miwi_nvm.c 
 	@-${MV} ${OBJECTDIR}/_ext/916281452/miwi_nvm.d ${OBJECTDIR}/_ext/916281452/miwi_nvm.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/916281452/miwi_nvm.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -114,7 +114,7 @@ ${OBJECTDIR}/_ext/916281452/miwi_p2p.p1: ../../../../../../framework/miwi/src/mi
 	@${MKDIR} "${OBJECTDIR}/_ext/916281452" 
 	@${RM} ${OBJECTDIR}/_ext/916281452/miwi_p2p.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/916281452/miwi_p2p.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/916281452/miwi_p2p.p1 ../../../../../../framework/miwi/src/miwi_p2p.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/916281452/miwi_p2p.p1 ../../../../../../framework/miwi/src/miwi_p2p.c 
 	@-${MV} ${OBJECTDIR}/_ext/916281452/miwi_p2p.d ${OBJECTDIR}/_ext/916281452/miwi_p2p.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/916281452/miwi_p2p.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -122,7 +122,7 @@ ${OBJECTDIR}/_ext/1730126216/console.p1: ../src/system_config/picdemz_pic18f4620
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/console.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/console.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/console.p1 ../src/system_config/picdemz_pic18f4620_24j40/console.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/console.p1 ../src/system_config/picdemz_pic18f4620_24j40/console.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/console.d ${OBJECTDIR}/_ext/1730126216/console.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/console.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -130,7 +130,7 @@ ${OBJECTDIR}/_ext/1730126216/delay.p1: ../src/system_config/picdemz_pic18f4620_2
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/delay.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/delay.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/delay.p1 ../src/system_config/picdemz_pic18f4620_24j40/delay.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/delay.p1 ../src/system_config/picdemz_pic18f4620_24j40/delay.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/delay.d ${OBJECTDIR}/_ext/1730126216/delay.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/delay.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -138,7 +138,7 @@ ${OBJECTDIR}/_ext/1730126216/eeprom.p1: ../src/system_config/picdemz_pic18f4620_
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/eeprom.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/eeprom.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/eeprom.p1 ../src/system_config/picdemz_pic18f4620_24j40/eeprom.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/eeprom.p1 ../src/system_config/picdemz_pic18f4620_24j40/eeprom.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/eeprom.d ${OBJECTDIR}/_ext/1730126216/eeprom.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/eeprom.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -146,7 +146,7 @@ ${OBJECTDIR}/_ext/1730126216/spi.p1: ../src/system_config/picdemz_pic18f4620_24j
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/spi.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/spi.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/spi.p1 ../src/system_config/picdemz_pic18f4620_24j40/spi.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/spi.p1 ../src/system_config/picdemz_pic18f4620_24j40/spi.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/spi.d ${OBJECTDIR}/_ext/1730126216/spi.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/spi.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -154,7 +154,7 @@ ${OBJECTDIR}/_ext/1730126216/symbol.p1: ../src/system_config/picdemz_pic18f4620_
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/symbol.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/symbol.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/symbol.p1 ../src/system_config/picdemz_pic18f4620_24j40/symbol.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/symbol.p1 ../src/system_config/picdemz_pic18f4620_24j40/symbol.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/symbol.d ${OBJECTDIR}/_ext/1730126216/symbol.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/symbol.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -162,7 +162,7 @@ ${OBJECTDIR}/_ext/1730126216/system.p1: ../src/system_config/picdemz_pic18f4620_
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/system.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/system.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/system.p1 ../src/system_config/picdemz_pic18f4620_24j40/system.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/system.p1 ../src/system_config/picdemz_pic18f4620_24j40/system.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/system.d ${OBJECTDIR}/_ext/1730126216/system.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/system.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -170,7 +170,7 @@ ${OBJECTDIR}/_ext/1730126216/lcd.p1: ../src/system_config/picdemz_pic18f4620_24j
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/lcd.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/lcd.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/lcd.p1 ../src/system_config/picdemz_pic18f4620_24j40/lcd.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/lcd.p1 ../src/system_config/picdemz_pic18f4620_24j40/lcd.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/lcd.d ${OBJECTDIR}/_ext/1730126216/lcd.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/lcd.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -178,7 +178,7 @@ ${OBJECTDIR}/_ext/1360937237/demo_ouput.p1: ../src/demo_ouput.c  nbproject/Makef
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/demo_ouput.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/demo_ouput.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1360937237/demo_ouput.p1 ../src/demo_ouput.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1360937237/demo_ouput.p1 ../src/demo_ouput.c 
 	@-${MV} ${OBJECTDIR}/_ext/1360937237/demo_ouput.d ${OBJECTDIR}/_ext/1360937237/demo_ouput.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1360937237/demo_ouput.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -186,7 +186,7 @@ ${OBJECTDIR}/_ext/1360937237/main.p1: ../src/main.c  nbproject/Makefile-${CND_CO
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1360937237/main.p1 ../src/main.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1360937237/main.p1 ../src/main.c 
 	@-${MV} ${OBJECTDIR}/_ext/1360937237/main.d ${OBJECTDIR}/_ext/1360937237/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1360937237/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -194,7 +194,7 @@ ${OBJECTDIR}/_ext/1360937237/p2p_demo.p1: ../src/p2p_demo.c  nbproject/Makefile-
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/p2p_demo.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/p2p_demo.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1360937237/p2p_demo.p1 ../src/p2p_demo.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1360937237/p2p_demo.p1 ../src/p2p_demo.c 
 	@-${MV} ${OBJECTDIR}/_ext/1360937237/p2p_demo.d ${OBJECTDIR}/_ext/1360937237/p2p_demo.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1360937237/p2p_demo.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -202,7 +202,7 @@ ${OBJECTDIR}/_ext/1360937237/task.p1: ../src/task.c  nbproject/Makefile-${CND_CO
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/task.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/task.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1360937237/task.p1 ../src/task.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1360937237/task.p1 ../src/task.c 
 	@-${MV} ${OBJECTDIR}/_ext/1360937237/task.d ${OBJECTDIR}/_ext/1360937237/task.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1360937237/task.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -211,7 +211,7 @@ ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1: ../../../../../../framework/
 	@${MKDIR} "${OBJECTDIR}/_ext/1308774647" 
 	@${RM} ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1 ../../../../../../framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1 ../../../../../../framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c 
 	@-${MV} ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.d ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1308774647/drv_mrf_miwi_24j40.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -219,7 +219,7 @@ ${OBJECTDIR}/_ext/916281452/miwi_nvm.p1: ../../../../../../framework/miwi/src/mi
 	@${MKDIR} "${OBJECTDIR}/_ext/916281452" 
 	@${RM} ${OBJECTDIR}/_ext/916281452/miwi_nvm.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/916281452/miwi_nvm.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/916281452/miwi_nvm.p1 ../../../../../../framework/miwi/src/miwi_nvm.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/916281452/miwi_nvm.p1 ../../../../../../framework/miwi/src/miwi_nvm.c 
 	@-${MV} ${OBJECTDIR}/_ext/916281452/miwi_nvm.d ${OBJECTDIR}/_ext/916281452/miwi_nvm.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/916281452/miwi_nvm.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -227,7 +227,7 @@ ${OBJECTDIR}/_ext/916281452/miwi_p2p.p1: ../../../../../../framework/miwi/src/mi
 	@${MKDIR} "${OBJECTDIR}/_ext/916281452" 
 	@${RM} ${OBJECTDIR}/_ext/916281452/miwi_p2p.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/916281452/miwi_p2p.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/916281452/miwi_p2p.p1 ../../../../../../framework/miwi/src/miwi_p2p.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/916281452/miwi_p2p.p1 ../../../../../../framework/miwi/src/miwi_p2p.c 
 	@-${MV} ${OBJECTDIR}/_ext/916281452/miwi_p2p.d ${OBJECTDIR}/_ext/916281452/miwi_p2p.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/916281452/miwi_p2p.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -235,7 +235,7 @@ ${OBJECTDIR}/_ext/1730126216/console.p1: ../src/system_config/picdemz_pic18f4620
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/console.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/console.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/console.p1 ../src/system_config/picdemz_pic18f4620_24j40/console.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/console.p1 ../src/system_config/picdemz_pic18f4620_24j40/console.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/console.d ${OBJECTDIR}/_ext/1730126216/console.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/console.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -243,7 +243,7 @@ ${OBJECTDIR}/_ext/1730126216/delay.p1: ../src/system_config/picdemz_pic18f4620_2
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/delay.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/delay.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/delay.p1 ../src/system_config/picdemz_pic18f4620_24j40/delay.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/delay.p1 ../src/system_config/picdemz_pic18f4620_24j40/delay.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/delay.d ${OBJECTDIR}/_ext/1730126216/delay.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/delay.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -251,7 +251,7 @@ ${OBJECTDIR}/_ext/1730126216/eeprom.p1: ../src/system_config/picdemz_pic18f4620_
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/eeprom.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/eeprom.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/eeprom.p1 ../src/system_config/picdemz_pic18f4620_24j40/eeprom.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/eeprom.p1 ../src/system_config/picdemz_pic18f4620_24j40/eeprom.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/eeprom.d ${OBJECTDIR}/_ext/1730126216/eeprom.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/eeprom.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -259,7 +259,7 @@ ${OBJECTDIR}/_ext/1730126216/spi.p1: ../src/system_config/picdemz_pic18f4620_24j
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/spi.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/spi.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/spi.p1 ../src/system_config/picdemz_pic18f4620_24j40/spi.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/spi.p1 ../src/system_config/picdemz_pic18f4620_24j40/spi.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/spi.d ${OBJECTDIR}/_ext/1730126216/spi.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/spi.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -267,7 +267,7 @@ ${OBJECTDIR}/_ext/1730126216/symbol.p1: ../src/system_config/picdemz_pic18f4620_
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/symbol.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/symbol.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/symbol.p1 ../src/system_config/picdemz_pic18f4620_24j40/symbol.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/symbol.p1 ../src/system_config/picdemz_pic18f4620_24j40/symbol.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/symbol.d ${OBJECTDIR}/_ext/1730126216/symbol.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/symbol.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -275,7 +275,7 @@ ${OBJECTDIR}/_ext/1730126216/system.p1: ../src/system_config/picdemz_pic18f4620_
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/system.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/system.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/system.p1 ../src/system_config/picdemz_pic18f4620_24j40/system.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/system.p1 ../src/system_config/picdemz_pic18f4620_24j40/system.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/system.d ${OBJECTDIR}/_ext/1730126216/system.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/system.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -283,7 +283,7 @@ ${OBJECTDIR}/_ext/1730126216/lcd.p1: ../src/system_config/picdemz_pic18f4620_24j
 	@${MKDIR} "${OBJECTDIR}/_ext/1730126216" 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/lcd.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1730126216/lcd.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1730126216/lcd.p1 ../src/system_config/picdemz_pic18f4620_24j40/lcd.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1730126216/lcd.p1 ../src/system_config/picdemz_pic18f4620_24j40/lcd.c 
 	@-${MV} ${OBJECTDIR}/_ext/1730126216/lcd.d ${OBJECTDIR}/_ext/1730126216/lcd.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1730126216/lcd.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -291,7 +291,7 @@ ${OBJECTDIR}/_ext/1360937237/demo_ouput.p1: ../src/demo_ouput.c  nbproject/Makef
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/demo_ouput.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/demo_ouput.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1360937237/demo_ouput.p1 ../src/demo_ouput.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1360937237/demo_ouput.p1 ../src/demo_ouput.c 
 	@-${MV} ${OBJECTDIR}/_ext/1360937237/demo_ouput.d ${OBJECTDIR}/_ext/1360937237/demo_ouput.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1360937237/demo_ouput.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -299,7 +299,7 @@ ${OBJECTDIR}/_ext/1360937237/main.p1: ../src/main.c  nbproject/Makefile-${CND_CO
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1360937237/main.p1 ../src/main.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1360937237/main.p1 ../src/main.c 
 	@-${MV} ${OBJECTDIR}/_ext/1360937237/main.d ${OBJECTDIR}/_ext/1360937237/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1360937237/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -307,7 +307,7 @@ ${OBJECTDIR}/_ext/1360937237/p2p_demo.p1: ../src/p2p_demo.c  nbproject/Makefile-
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/p2p_demo.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/p2p_demo.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1360937237/p2p_demo.p1 ../src/p2p_demo.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1360937237/p2p_demo.p1 ../src/p2p_demo.c 
 	@-${MV} ${OBJECTDIR}/_ext/1360937237/p2p_demo.d ${OBJECTDIR}/_ext/1360937237/p2p_demo.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1360937237/p2p_demo.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -315,7 +315,7 @@ ${OBJECTDIR}/_ext/1360937237/task.p1: ../src/task.c  nbproject/Makefile-${CND_CO
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/task.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/task.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1360937237/task.p1 ../src/task.c 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o${OBJECTDIR}/_ext/1360937237/task.p1 ../src/task.c 
 	@-${MV} ${OBJECTDIR}/_ext/1360937237/task.d ${OBJECTDIR}/_ext/1360937237/task.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1360937237/task.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -328,23 +328,17 @@ else
 endif
 
 # ------------------------------------------------------------------------------------
-# Rules for buildStep: assembleWithPreprocess
-ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-else
-endif
-
-# ------------------------------------------------------------------------------------
 # Rules for buildStep: link
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/simple_example_p2p.x.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=dist/${CND_CONF}/${IMAGE_TYPE}/simple_example_p2p.x.${IMAGE_TYPE}.map  -D__DEBUG=1  -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -mrom=default,-fd30-ffff -mram=default,-ef4-eff,-f9c-f9c,-fd4-fd4,-fdb-fdf,-fe3-fe7,-feb-fef,-ffd-fff  $(COMPARISON_BUILD) -Wl,--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml -o dist/${CND_CONF}/${IMAGE_TYPE}/simple_example_p2p.x.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_CC} $(MP_EXTRA_LD_PRE) --chip=$(MP_PROCESSOR_OPTION) -G -mdist/${CND_CONF}/${IMAGE_TYPE}/simple_example_p2p.x.${IMAGE_TYPE}.map  -D__DEBUG=1  --debugger=none  -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"        $(COMPARISON_BUILD) --memorysummary dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml -odist/${CND_CONF}/${IMAGE_TYPE}/simple_example_p2p.x.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 	@${RM} dist/${CND_CONF}/${IMAGE_TYPE}/simple_example_p2p.x.${IMAGE_TYPE}.hex 
 	
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/simple_example_p2p.x.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=dist/${CND_CONF}/${IMAGE_TYPE}/simple_example_p2p.x.${IMAGE_TYPE}.map  -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1    -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=ignore -xassembler-with-cpp -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" -mwarn=3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     $(COMPARISON_BUILD) -Wl,--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml -o dist/${CND_CONF}/${IMAGE_TYPE}/simple_example_p2p.x.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_CC} $(MP_EXTRA_LD_PRE) --chip=$(MP_PROCESSOR_OPTION) -G -mdist/${CND_CONF}/${IMAGE_TYPE}/simple_example_p2p.x.${IMAGE_TYPE}.map  -DXPRJ_picdemz_pic18f4620_24j40=$(CND_CONF)    --double=32 --float=32 --emi=wordwrite --opt=+asm,-asmfile,+speed,-space,-debug,-local --addrqual=ignore --mode=pro -P -N255 -I"../src/system_config/picdemz_pic18f4620_24j40" -I"../src" -I"../../src" -I"../../../../../../framework" --warn=3 --asmlist --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     $(COMPARISON_BUILD) --memorysummary dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml -odist/${CND_CONF}/${IMAGE_TYPE}/simple_example_p2p.x.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 	
 endif
 

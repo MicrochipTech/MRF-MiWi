@@ -27,7 +27,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 PROJECTNAME=simple_example_p2p.x
 
 # Active Configuration
-DEFAULTCONF=miwikit_pic18f46j50_24j40
+DEFAULTCONF=pic18exp_pic16f1947_24j40
 CONF=${DEFAULTCONF}
 
 # All Configurations

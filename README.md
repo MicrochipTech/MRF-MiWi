@@ -12,7 +12,7 @@ Devices: | MRF24J40 | MRF89XA <br /> Supported Host MCU: | PIC18F46J50 | PIC18F4
 This repository contains unsupported example code intended to help accelerate client product development. It is not validated for production nor audited for security best-practices. This software was designed and released without modern security practices in mind and has known potential security vulnerabilities. Users of this codebase are advised to use this in non-security-critical applications, and are responsible for ensuring that it is used appropriately. Note that while this repository is unsupported, Microchip welcome community contributions, and all pull-requests will be considered for inclusion into the repository.
 </span></p></b>
 
-## *This is what you Must know about MRF MiWi!!!*
+## ⚠ *This is what you Must know about MRF MiWi!!!*
 
 <b>MRF-MiWi is not compatible with [MiWi protocol](https://www.microchip.com/en-us/products/wireless-connectivity/sub-ghz/miwi-protocol) supporting SAMR21 and SAMR30 SoC devices.
 

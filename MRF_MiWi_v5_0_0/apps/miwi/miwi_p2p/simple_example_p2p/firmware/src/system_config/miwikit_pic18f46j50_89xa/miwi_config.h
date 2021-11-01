@@ -263,7 +263,7 @@
 // ENABLE_SECURITY will enable the device to encrypt and decrypt
 // information transferred
 /*********************************************************************/
-//#define ENABLE_SECURITY
+#define ENABLE_SECURITY
 
 /*********************************************************************/
 // ENABLE_INDIRECT_MESSAGE will enable the device to store the packets

@@ -40,6 +40,10 @@
 // required by Network Freezer feature.
 #define USE_EXTERNAL_EEPROM
 
+#if defined (ENABLE_SECURITY)
+#define SOFTWARE_SECURITY
+#endif
+
 #define SUPPORT_TWO_SPI
 
 // Define EEPROM_SHARE_SPI if external EEPROM shares the SPI

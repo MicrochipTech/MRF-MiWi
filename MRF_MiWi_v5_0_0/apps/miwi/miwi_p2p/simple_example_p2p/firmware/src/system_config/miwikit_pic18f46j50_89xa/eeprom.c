@@ -33,7 +33,7 @@
 #define EEPROM_MAC_ADDR 0xFA
 
 extern uint8_t myLongAddress[];
-
+extern void MacroNop(void);
 
 /*********************************************************************
 * Function:        void EEPROMRead(uint8_t *dest, uint8_t addr, uint8_t count)
