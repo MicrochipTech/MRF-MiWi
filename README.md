@@ -19,6 +19,11 @@ This repository contains unsupported example code intended to help accelerate cl
   MRF MiWi supports only MRF24J40 and MRF89XA tranceiver IC based devices. MRF MiWi supports PIC16F1947, PIC18F46J50, PIC18F4620, PIC18F87J11 and PIC24FJ128GA010 as host MCUs.
 </b>
 
+## *Security Vulnerability Fix is provided for MRF MiWi*
+
+<b>Security Vulnerability Fix is provided for MRF MiWi in [miwi_p2p.c](VulnerabilityFix/miwi_p2p.c)
+</b>
+
 ## Resources
 
 - [Microchip MPLAB X IED IDE](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide)
