@@ -21,7 +21,7 @@ This repository contains unsupported example code intended to help accelerate cl
 
 ## *Security Vulnerability Fixes are provided for MRF MiWi*
 
-<b>Security Vulnerability Fixes are provided for MRF MiWi in [miwi_p2p.c](VulnerabilityFix/miwi_p2p.c). You can replace original miwi_p2p.c in '..\MRF-MiWi\MRF_MiWi_v5_0_0\framework\miwi\src' folder with the file to invoke the fixes.
+<b>Security Vulnerability Fixes are provided for MRF MiWi in [miwi_p2p.c](VulnerabilityFix/miwi_p2p.c). You can replace original miwi_p2p.c in '..\MRF-MiWi\MRF_MiWi_v5_0_0\framework\miwi\src' folder with the new miwi_p2p.c file to invoke the fixes.
 </b>
 
 ## Resources
