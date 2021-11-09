@@ -1,7 +1,8 @@
 # MRF-MiWi
 
 <img src="resources/media/IoT-Made-Easy-Logo.png" width=100>
-### <b>"Wireless Made Easy!" - Microchip MiWi P2P and Star Stack Opened for MRF24J40 and MRF89XA transceiver running on MPLAB X IDE</b>
+
+### "Wireless Made Easy!" - Microchip MiWi P2P and Star Stack Opened for MRF24J40 and MRF89XA transceiver running on MPLAB X IDE
 
 Devices: | MRF24J40 | MRF89XA <br /> Supported Host MCU: | PIC18F46J50 | PIC18F4620 | PIC18F87J11 | PIC24FJ128GA010 | PIC16F1947
 
