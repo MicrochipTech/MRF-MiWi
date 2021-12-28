@@ -22,7 +22,7 @@ This repository contains unsupported example code intended to help accelerate cl
 
 ## *Security Vulnerability Fixes are provided for MRF MiWi*
 
-<b>Security Vulnerability Fixes are provided for MRF MiWi in [miwi_p2p.c](VulnerabilityFix/miwi_p2p.c). The file with fixes can be found in `..\MRF-MiWi\VulnerabilityFix` folder  in cloned MRF-MiWi directory. You can replace original miwi_p2p.c in `..\MRF-MiWi\MRF_MiWi_v5_0_0\framework\miwi\src\` folder with the new miwi_p2p.c file to invoke the fixes.
+<b>Security Vulnerability Fixes are provided for MRF MiWi in [miwi_p2p.c](VulnerabilityFix/miwi_p2p.c) and [drv_mrf_miwi_89xa.c](VulnerabilityFix/drv_mrf_miwi_89xa.c). The file with fixes can be found in `..\MRF-MiWi\VulnerabilityFix` folder  in cloned MRF-MiWi directory. You can replace original miwi_p2p.c in `..\MRF-MiWi\MRF_MiWi_v5_0_0\framework\miwi\src\` folder and drv_mrf_miwi_89xa.c in `..\MRF-MiWi\MRF_MiWi_v5_0_0\framework\driver\mrf_miwi\src\` folder with the new miwi_p2p.c and drv_mrf_miwi_89xa.c and files to invoke the fixes.
 
 ## Resources
 
